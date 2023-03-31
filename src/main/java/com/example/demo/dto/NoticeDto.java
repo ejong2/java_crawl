@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Getter
@@ -14,7 +15,7 @@ public class NoticeDto {
 
     private String title;
     private String link;
-    private LocalDateTime date;
+    private LocalDate date;
 
     public NoticeDto(Notice notice) {
         this.title = notice.getTitle();
